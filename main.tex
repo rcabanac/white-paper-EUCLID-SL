@@ -1,25 +1,75 @@
-\documentclass{article}
+% ======================================================================
+% Euclid Strong Lensing Science Working Group White Paper
+% ======================================================================
+
+\documentclass[twocolumn]{svjour3}
+
 \usepackage[utf8]{inputenc}
 \usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{layout}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\def\apj{ApJ}
+
+% ======================================================================
 
 \begin{document}
 
 \title{Euclid Science with Strong Gravitational Lenses}
+\titlerunning{Euclid Science with Strong Gravitational Lenses}
 
-\author{The Euclid Consortium Strong Lensing Science Working Group}
+\author{The Euclid Consortium Strong Lensing Science Working Group:\\
+Tom Collett$^1$ \and
+Remi Cabanac \and
+Frederic Courbin \and
+Giovanni Covone \and
+Pierre Dubath \and
+Raphael Gavazzi \and
+Carlo Giocoli \and
+Philippa Hartley \and
+Eric Jullo \and
+Neal Jackson \and
+Steve Kahn \and
+Gijs Verdoes Kleijn \and
+Jean-Paul Kneib \and
+Leon Koopmans \and
+Eric Linder \and
+Phil Marshall$^4$ \and
+Massimo Meneghetti \and
+Ben Metcalf \and
+Leonidas Moustakas \and
+Enrico Petrillo \and
+Stephen Serjeant \and
+Dominique Sluse \and
+Amital Tagore \and
+Andrea Tramacere \and
+Giorgos Vernardos
+}
+\authorrunning{Euclid Strong Lensing Science Working Group}
+
+\institute{%
+$^1$ ICG, Portsmouth, UK. \\
+$^4$ KIPAC, Stanford, CA, USA. \\
+\email{ecsls@groups.google.com}
+}
+
 
 \maketitle
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------------------------
 
 \begin{abstract}
-\noindent Euclid will image \emph{a lot of sky} at \emph{high resolution}. This dataset
-will contain {\it a large number} of lenses of various types, enabling a variety 
-of different  science investigations. In this white paper we describe a set of
-key projects, that exercise the unique capability of Euclid coupled to a large
-array of gravitational lenses, that we plan to carry out using the Euclid
-dataset, outlining the motivation, expectations and technical challenges
-associated with each one.
+\noindent Euclid will image \emph{a lot of sky} at \emph{high
+resolution}. This dataset will contain {\it a large number} of lenses of
+various types, enabling a variety  of different  science investigations.
+In this white paper we describe a set of key projects, that exercise the
+unique capability of Euclid coupled to a large array of gravitational
+lenses, that we plan to carry out using the Euclid dataset, outlining
+the motivation, expectations and technical challenges associated with
+each one.
+\keywords{surveys -- techniques \and high angular resolution -- optical}
 \end{abstract}
 
 
@@ -33,31 +83,32 @@ associated with each one.
 \end{itemize}
 
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------------------------
 
 \section{Introduction}
 
 {\bf Responsible: Fred}
 
-Strong lensing as a tool for studying the universe and its contents. 
-Unique capabilities of Euclid coupled to strong lenses. How our 
-work fits with other working groups. 
+Strong lensing as a tool for studying the universe and its contents.
+Unique capabilities of Euclid coupled to strong lenses. How our  work
+fits with other working groups.
 
 Why are we writing this paper? And why are we writing it now?
 
-Technical challenges. History of finding, challenge of Euclid. History of 
-measurement/modeling, challenge of Euclid.
+Technical challenges. History of finding, challenge of Euclid. History
+of  measurement/modeling, challenge of Euclid.
 
 Goals of this paper.
 
-This paper is organized as follows. In Section~\ref{sec:yield} we assess the 
-potential of the Euclid dataset, calculating the expected abundance of a 
-number of different strong gravitational lenses detectable with Euclid. With 
-this in hand, we then 
-describe, in Sections~\ref{sec:astrophysics} and~\ref{sec:cosmology}, a set 
-of strong lensing science projects that we plan to do using the Euclid data.
+This paper is organized as follows. In Section~\ref{sec:yield} we assess
+the  potential of the Euclid dataset, calculating the expected abundance
+of a  number of different strong gravitational lenses detectable with
+Euclid. With  this in hand, we then  describe, in
+Sections~\ref{sec:astrophysics} and~\ref{sec:cosmology}, a set  of
+strong lensing science projects that we plan to do using the Euclid
+data.
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------------------------
 
 \section{Survey Yield}
 
@@ -69,30 +120,36 @@ Galaxy-scale = anything with $ M_{\odot} < 10^{12}$
 
 Groups, clusters $ 10^{13}< M_{\odot} < 10^{15}$
 
-Forecasts for lens numbers, of various kinds, to various signal-to-noise ratios. 
+Forecasts for lens numbers, of various kinds, to various signal-to-noise ratios.
 
 Subsamples that science will depend on.
 
 For deep fields, wide fields.
 
+We use the {\sc LensPop} package by \citet{Collett2015} to make
+forecasts.
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------------------------
 
 \section{Astrophysics}
 
 Preamble.
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-\subsection{Structure and Evolution of Massive Lens Galaxies} 
+\subsection{Structure and Evolution of Massive Lens Galaxies}
 \label{sec:lensgalaxies}
 
-\noindent{\it Contributors: Amit Tagore, Neal Jackson, Leon Koopmans, Dominique Sluse, Giorgos Vernardos, Raphael Gavazzi, Frederic Courbin, Philippa Hartley}
+\noindent{\it Contributors: Amit Tagore, Neal Jackson, Leon Koopmans,
+Dominique Sluse, Giorgos Vernardos, Raphael Gavazzi, Frederic Courbin,
+Philippa Hartley}
 
 \noindent{\bf Responsible: Leon}
 
-Preamble.\footnote{Subsection~\ref{sec:lensgalaxies} could potentially get very large. We may need to split it up into several different science cases, led by different people.}
+Preamble.\footnote{Subsection~\ref{sec:lensgalaxies} could potentially
+get very large. We may need to split it up into several different
+science cases, led by different people.}
 
 \subsubsection{Motivation}
 Current state of the art. Science questions.\\
@@ -104,14 +161,16 @@ Improvements with Euclid.\\
 What do we need to do between now and first light?\\
 Notes on lens finding for this science case.\\
 Notes on lens measurement.\\
-Notes on follow-up observations and synergies with other surveys: radio (Philippa) \\
+Notes on follow-up observations and synergies with other surveys: radio
+(Philippa) \\
 Notes on inference.\\
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 \subsection{Galaxies at Ultra High Redshift}
 
-\noindent{\it Contributors: Stephen Serjeant, Giovanni Covone, Phil Marshall}
+\noindent{\it Contributors: Stephen Serjeant, Giovanni Covone, Phil
+Marshall}
 
 \noindent{\bf Responsible: Stephen}
 
@@ -129,19 +188,20 @@ What do we need to do between now and first light?\\
 
 Notes on lens finding for this science case.\\
 
-Notes on lens measurement: modeling groups and clusters for use as cosmic
-telescopes.
+Notes on lens measurement: modeling groups and clusters for use as
+cosmic telescopes.
 
 Notes on follow-up observations and synergies with other surveys.\\
 
 Notes on inference.\\
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 \subsection{AGN and Their Hosts}
 
-\noindent{\it Contributors: Giorgos Vernardos, Dominique Sluse, Phil Marshall, Leonidas Moustakas, Frederic Courbin}
+\noindent{\it Contributors: Giorgos Vernardos, Dominique Sluse, Phil
+Marshall, Leonidas Moustakas, Frederic Courbin}
 
 \noindent{\bf Responsible: Giorgos}
 
@@ -160,18 +220,21 @@ Improvements with Euclid.\\
 
 What do we need to do between now and first light?\\
 
-Notes on lens finding for this science case. Tuning finders for quasars\\
+Notes on lens finding for this science case. Tuning finders for
+quasars\\
 
 Notes on lens measurement.\\
 
-Notes on follow-up observations and synergies with other surveys. Overlap with LSST.\\
+Notes on follow-up observations and synergies with other surveys.
+Overlap with LSST.\\
 
 Notes on inference.\\
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-\subsection{Understanding Dark Matter and Baryons: Cluster Halo Mass Profiles, Shapes, and Substructures}
+\subsection{Understanding Dark Matter and Baryons: Cluster Halo Mass
+Profiles, Shapes, and Substructures}
 
 \noindent{Contributors: Raphael Gavazzi, Massimo Meneghetti}
 
@@ -198,9 +261,9 @@ Notes on follow-up observations and synergies with other surveys.\\
 Notes on inference.\\
 
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------------------------
 
-\section{Cosmology} 
+\section{Cosmology}
 \label{sec:cosmology}
 
 \noindent{\it Contributors: Ben Metcalf, Eric Linder, Tom Collett}
@@ -209,7 +272,7 @@ Notes on inference.\\
 
 Preamble.\footnote{Section~\ref{sec:cosmology} may need more subsections, let's see.}
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 \subsection{Cluster Abundance}
 
@@ -240,7 +303,7 @@ Notes on follow-up observations and synergies with other surveys.\\
 Notes on inference.\\
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 \subsection{Compound Lens Cosmography}
 
@@ -272,23 +335,24 @@ Notes on follow-up observations and synergies with other surveys.\\
 Notes on inference.\\
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 %\subsection{Synergistic Cosmography?}
-%Finding quasar lenses for time delays? 
+
+%Finding quasar lenses for time delays?
 
 \vspace{30pt}
 
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------------------------
 
-\section{Discussion and Conclusions} 
+\section{Discussion and Conclusions}
 \label{sec:conclusions}
 
-In this section we survey the science projects introduced and assessed in this 
-work, identify a number of common challenges that we face, and use these to 
-assign ourselves a number of high priority tasks to be carried out before the
-first data release.
+In this section we survey the science projects introduced and assessed
+in this  work, identify a number of common challenges that we face, and
+use these to  assign ourselves a number of high priority tasks to be
+carried out before the first data release.
 
 \subsection{Common Challenges}
 
@@ -302,9 +366,9 @@ These will be defined once we have written down the challenges.
 
 \subsection{Conclusions}
 
-The Euclid dataset should contain some XXX lenses, enabling the key science
-projects described in this paper and more. Just focusing on these key projects,
-we conclude the following:
+The Euclid dataset should contain some XXX lenses, enabling the key
+science projects described in this paper and more. Just focusing on
+these key projects, we conclude the following:
 
 \begin{itemize}
 
@@ -312,18 +376,26 @@ we conclude the following:
 
 \item The challenge of XXX is daunting. We will need to do YYY.
 
-\item XXX is very promising, but to realize its potential we will need YYY.
+\item XXX is very promising, but to realize its potential we will need
+YYY.
 
 \end{itemize}
 
+% ----------------------------------------------------------------------
 
-% -----------------------------------------------------------------------------
+\begin{acknowledgements}
 
-% \bibliographystyle{apj}
-% \bibliography{references}
-\noindent
-- Boldrin et al., 2016, MNRAS, 457, 2738\\
-- Boldrin et al., 2012, MNRAS, 427, 3134\\
-- Collett et al., 2015, ApJ 811, 20.\\
+We thank XXX for useful discussions.
+
+The work of XXX was supported by YYY.
+
+\end{acknowledgements}
+
+% ----------------------------------------------------------------------
+
+\bibliographystyle{apj}
+\bibliography{references}
 
 \end{document}
+
+% ======================================================================
