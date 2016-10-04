@@ -1,0 +1,8 @@
+# LaTeX (by-)products:
+*.aux
+*.log
+*.out
+*.blg
+*.bbl
+*.dvi
+main.pdf
