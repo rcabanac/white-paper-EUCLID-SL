@@ -87,7 +87,7 @@ each one.
 
 \section{Introduction}
 
-{\bf Responsible: Fred}
+{\it Responsible: Fred}
 
 Strong lensing as a tool for studying the universe and its contents.
 Unique capabilities of Euclid coupled to strong lenses. How our  work
@@ -114,7 +114,7 @@ data.
 
 \noindent{\it Contributors: Leon Koopmans, Massimo Meneghetti, Tom Collett}
 
-\noindent{\bf Responsible: Leon and Max}
+\noindent{\it Responsible: Leon and Max}
 
 Galaxy-scale = anything with $ M_{\odot} < 10^{12}$
 
@@ -145,7 +145,7 @@ Preamble.
 Dominique Sluse, Giorgos Vernardos, Raphael Gavazzi, Frederic Courbin,
 Philippa Hartley}
 
-\noindent{\bf Responsible: Leon}
+\noindent{\it Responsible: Leon}
 
 Preamble.\footnote{Subsection~\ref{sec:lensgalaxies} could potentially
 get very large. We may need to split it up into several different
@@ -172,7 +172,7 @@ Notes on inference.\\
 \noindent{\it Contributors: Stephen Serjeant, Giovanni Covone, Phil
 Marshall}
 
-\noindent{\bf Responsible: Stephen}
+\noindent{\it Responsible: Stephen}
 
 Preamble.
 
@@ -203,7 +203,7 @@ Notes on inference.\\
 \noindent{\it Contributors: Giorgos Vernardos, Dominique Sluse, Phil
 Marshall, Leonidas Moustakas, Frederic Courbin}
 
-\noindent{\bf Responsible: Giorgos}
+\noindent{\it Responsible: Giorgos}
 
 Preamble.
 
@@ -238,7 +238,7 @@ Profiles, Shapes, and Substructures}
 
 \noindent{Contributors: Raphael Gavazzi, Massimo Meneghetti}
 
-\noindent{\bf Responsible: Massimo}
+\noindent{\it Responsible: Massimo}
 
 Preamble.
 
@@ -268,7 +268,7 @@ Notes on inference.\\
 
 \noindent{\it Contributors: Ben Metcalf, Eric Linder, Tom Collett}
 
-\noindent{\bf Responsible: Phil}
+\noindent{\it Responsible: Phil}
 
 Preamble.\footnote{Section~\ref{sec:cosmology} may need more subsections, let's see.}
 
@@ -278,7 +278,7 @@ Preamble.\footnote{Section~\ref{sec:cosmology} may need more subsections, let's 
 
 \noindent{\it Contributors: Carlo Giocoli, Massimo Meneghetti}
 
-\noindent{\bf Responsible: Carlo}
+\noindent{\it Responsible: Carlo}
 
 Arc statistics, mass function.
 
@@ -307,33 +307,75 @@ Notes on inference.\\
 
 \subsection{Compound Lens Cosmography}
 
-\noindent{\it Contributors: Tom Collett, Eric Jullo, Phil Marshall}
+\noindent{\it Contributors: Phil Marshall, Tom Collett, Eric Jullo}
 
-\noindent{\bf Responsible: Tom}
+\noindent{\it Responsible: Tom}\\
 
-Double source plane systems. Galaxy scale? Cluster scale?
-
-
-Preamble.
+Gravitational lens systems with multiple sources at different redshifts can, in principle, be used as cosmographic probes. Since it is (nearly) the same mass distribution that is causing the multiple imaging of all the background sources, the distance ratios associated with all the sources must be consistent. In practice there are complications, but one might hope that joint analysis of a sample of systems would ameliorate them. In this section we consider both galaxy-scale and cluster-scale compound lenses as seen by Euclid, and explore the possibility of constraining cosmological parameters with them.
 
 \subsubsection{Motivation}
-Current state of the art. Science questions.\\
+
+\begin{itemize}
+\item The current state of the art: individual systems, gilded with a lot of high quality follow-up data. The Jackpot (Gavazzi et al, Collett+Auger) at galaxy scale. The Frontier Fields clusters (Jullo et al, Natarajan et al).
+\item Science questions: 1) How is the expansion of the Universe accelerating? Compound lenses are a geometric/kinematic probe of cosmology, to first order independent of the growth of structure. 2) What are the primary residual systematic errors associated with this probe, and how are they correlated with residual systematics in other probes?
+\end{itemize}
 
 \subsubsection{Expectations}
-Improvements with Euclid.\\
+
+Improvements with Euclid: Euclid should enable the construction of a
+sample of $\sim100$ galaxy-scale systems, when combined with deep
+ground-based imaging from LSST to obtain optical colors of the faint
+imaged features. Still greater numbers of clusters and groups should be
+detectable. Combined, this sample could provide competitive and
+complementary constraints on the parameters of the accelerating
+expansion.
+
+Figure: distribution of Euclid compound lens $z_d - z_s$ pairs, showing
+both ``galaxy-scale'' and ``cluster-scale'' systems. The clusters will
+appear as ``fingers,'' with many source redshifts at each constant
+cluster $z_d$. The point of this plot is to show the redshift coverage,
+and also the relative contribution of the Jackpots and clusters.
+
+Figure: some estimate of the potential constraints on cosmological
+parameters from galaxy-scale and cluster-scale lenses, presumably given
+optimistic predictions of the impact of line of sight structure....
+
 
 \subsubsection{Technical Challenges}
 
 What do we need to do between now and first light?\\
 
-Notes on lens finding for this science case.\\
+Finding compound lenses will depend on our being able to detect the
+fainter secondary arcs, potentially in the presence of confusing
+foreground lens light. Color separation will be important: we must be
+able to detect lensed features at low surface brightness in several
+filters. We expect the combination of Euclid and LSST imaging to be
+significantly more powerful than either survey alone. A good detection
+strategy may be to first detect the primary rings and arcs, and then
+apply a targeted algorithm to look for additional lensed features, given
+the already-fitted model. This is pixel-level analysis, that would need
+to be run on $\sim 10^5$ systems.
 
-Notes on lens measurement.\\
+The Euclid and LSST data alone should permit a simple lens model to be
+made, probably as part of the detection process, and this should enable
+us to construct a compound lens sample. At the galaxy scale, this may
+already be sufficient to make a statistical cosmological analysis, with
+the lenses being combined as part of the hierarchical model outlined in
+Section~\ref{sec:lensgalaxies} above. The cluster lens models
+constrained using Euclid and LSST data alone may be accurate enough for
+cosmographic work, but the additional complexity of their mass
+distributions and increased likelihood of there being significant line
+of sight contamination make this an important area of investigation.
+Indeed, line of sight structures are likely to be the dominant source of
+systematic error in this method (Schneider), and so should be
+investigated rigorously using ray-traced cosmological simulations.
 
-Notes on follow-up observations and synergies with other surveys.\\
-
-Notes on inference.\\
-
+Ultimately, the high accuracy cosmography is most likely to come from
+follow-up observation of the Euclid/LSST sample. IFU observations of the
+arcs and rings with extremely large telescopes should provide both the
+high resolution imaging needed for arc surface brightness and lens
+potential reconstruction, and the 2D spectroscopy needed for accurate
+measurement of the lens galaxies' stellar kinematics.\\
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
