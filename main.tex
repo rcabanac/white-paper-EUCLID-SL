@@ -29,8 +29,8 @@ Pierre Dubath \and
 Raphael Gavazzi \and
 Carlo Giocoli \and
 Philippa Hartley \and
-Eric Jullo \and
 Neal Jackson \and
+Eric Jullo \and
 Steve Kahn \and
 Gijs Verdoes Kleijn \and
 Jean-Paul Kneib \and
@@ -43,7 +43,7 @@ Leonidas Moustakas \and
 Enrico Petrillo \and
 Stephen Serjeant \and
 Dominique Sluse \and
-Amital Tagore \and
+Amitpal Tagore \and
 Andrea Tramacere \and
 Giorgos Vernardos
 }
@@ -112,7 +112,8 @@ data.
 
 \section{Survey Yield}
 
-\noindent{\it Contributors: Leon Koopmans, Massimo Meneghetti, Tom Collett}
+\subsection{Galaxies}
+\noindent{\it Contributors: Leon Koopmans, Massimo Meneghetti, Tom Collett, Enrico Petrillo}
 
 \begin{figure*}[t]
 \centering
@@ -120,9 +121,13 @@ data.
 \caption{Expected number of lenses and their properties in the Euclid shallow survey.}
 \end{figure*}
 
-\noindent{\it Responsible: Leon and Max}
+\noindent{\it Responsible: Leon}
 
 Galaxy-scale = anything with $ M_{\odot} < 10^{12}$
+
+\subsection{Groups and cluster}
+
+\noindent{\it Responsible: Max}
 
 Groups, clusters $ 10^{13}< M_{\odot} < 10^{15}$
 
@@ -135,9 +140,15 @@ For deep fields, wide fields.
 We use the {\sc LensPop} package by \citet{Collett2015} to make
 forecasts.
 
+\subsection{Miscellaneous}
+
+\noindent{\it Responsible: Stephen}
+
 % ----------------------------------------------------------------------
 
 \section{Astrophysics}
+
+
 
 Preamble.
 
@@ -173,7 +184,35 @@ Notes on inference.\\
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-\subsection{Galaxies at Ultra High Redshift}
+\subsection{Structure and evolution of galaxy clusters and groups}
+\noindent{\it Responsible: Massimo}
+
+\noindent{\it Contributors: Raphael Gavazzi, Massimo Meneghetti, Jean-Paul Kneib, R Cabanac}
+
+Preamble.
+
+\subsubsection{Motivation}
+Current state of the art. Science questions.\\
+
+\subsubsection{Expectations}
+Improvements with Euclid.\\
+
+\subsubsection{Technical Challenges}
+
+What do we need to do between now and first light?\\
+
+Notes on lens finding for this science case.\\
+
+Notes on lens measurement.\\
+
+Notes on follow-up observations and synergies with other surveys.\\
+
+Notes on inference.\\
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\subsection{Ultra High Redshift sources}
 
 \noindent{\it Contributors: Stephen Serjeant, Giovanni Covone, Phil
 Marshall}
@@ -226,17 +265,24 @@ Notes on inference.\\
 \subsection{AGN and Their Hosts}
 
 \noindent{\it Contributors: Giorgos Vernardos, Dominique Sluse, Phil
-Marshall, Leonidas Moustakas, Frederic Courbin}
+Marshall, Leonidas Moustakas, Frederic Courbin, Ben Metcalf}
 
 \noindent{\it Responsible: Giorgos}
 
 Preamble.
+Currently there are $\sim$100 known lensed quasars.
+Euclid is expected to bring this number up to ??? (see section 2.1 by Leon).
+Lensed quasars can be used to measure time delays (see section 4).
+LSST will provide sufficient monitoring for doing this, but not sufficient resolution for accurate lens models, which Euclid can do.
+Euclid will not provide light curves of quasars, but could provide snapshots which could be used together with microlensi to constrain AGN structure like the Broad Line Emission and even the accretion disc (e.g. see Bate 2008, O'Dowd 2015, Jimenez-Vicente 2015).
+
 
 AGN, quasars, microlensing.
 Synergy with LSST.
 
 \subsubsection{Motivation}
 Current state of the art. Science questions.\\
+
 
 \subsubsection{Expectations}
 Improvements with Euclid.\\
@@ -256,37 +302,12 @@ Overlap with LSST.\\
 Notes on inference.\\
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-\subsection{Understanding Dark Matter and Baryons: Cluster Halo Mass
-Profiles, Shapes, and Substructures}
-
-\noindent{Contributors: Raphael Gavazzi, Massimo Meneghetti}
-
-\noindent{\it Responsible: Massimo}
-
-Preamble.
-
-\subsubsection{Motivation}
-Current state of the art. Science questions.\\
-
-\subsubsection{Expectations}
-Improvements with Euclid.\\
-
-\subsubsection{Technical Challenges}
-
-What do we need to do between now and first light?\\
-
-Notes on lens finding for this science case.\\
-
-Notes on lens measurement.\\
-
-Notes on follow-up observations and synergies with other surveys.\\
-
-Notes on inference.\\
-
 
 % ----------------------------------------------------------------------
+% The present section Cosmology should be structured the same way the
+% astrophysics section is, instead of being 
+%
+%
 
 \section{Cosmology}
 \label{sec:cosmology}
@@ -339,7 +360,7 @@ Notes on inference.\\
 
 \subsection{Compound Lens Cosmography}
 
-\noindent{\it Contributors: Phil Marshall, Tom Collett, Eric Jullo}
+\noindent{\it Contributors: Phil Marshall, Tom Collett, Eric Jullo, Ben Metcalf}
 
 \noindent{\it Responsible: Tom}\\
 
